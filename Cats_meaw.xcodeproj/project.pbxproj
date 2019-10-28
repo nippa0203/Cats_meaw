@@ -8,20 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		B81039572366A98C007155D4 /* fluffy-Gothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B81039562366A98C007155D4 /* fluffy-Gothic.ttf */; };
-		B81039662366AC6D007155D4 /* 02_cats_14.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B81039582366AC6D007155D4 /* 02_cats_14.mp3 */; };
-		B81039672366AC6D007155D4 /* 02_cats_07.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B81039592366AC6D007155D4 /* 02_cats_07.mp3 */; };
 		B81039682366AC6D007155D4 /* 02_cats_03.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B810395A2366AC6D007155D4 /* 02_cats_03.mp3 */; };
-		B81039692366AC6D007155D4 /* 02_cats_11.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B810395B2366AC6D007155D4 /* 02_cats_11.mp3 */; };
 		B810396A2366AC6D007155D4 /* 02_cats_01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B810395C2366AC6D007155D4 /* 02_cats_01.mp3 */; };
-		B810396B2366AC6D007155D4 /* 02_cats_13.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B810395D2366AC6D007155D4 /* 02_cats_13.mp3 */; };
-		B810396C2366AC6D007155D4 /* 02_cats_08.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B810395E2366AC6D007155D4 /* 02_cats_08.mp3 */; };
-		B810396D2366AC6D007155D4 /* 02_cats_09.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B810395F2366AC6D007155D4 /* 02_cats_09.mp3 */; };
 		B810396E2366AC6D007155D4 /* 02_cats_04.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B81039602366AC6D007155D4 /* 02_cats_04.mp3 */; };
 		B810396F2366AC6D007155D4 /* 02_cats_02.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B81039612366AC6D007155D4 /* 02_cats_02.mp3 */; };
-		B81039702366AC6D007155D4 /* 02_cats_10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B81039622366AC6D007155D4 /* 02_cats_10.mp3 */; };
 		B81039712366AC6D007155D4 /* 02_cats_05.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B81039632366AC6D007155D4 /* 02_cats_05.mp3 */; };
 		B81039722366AC6D007155D4 /* 02_cats_06.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B81039642366AC6D007155D4 /* 02_cats_06.mp3 */; };
-		B81039732366AC6D007155D4 /* 02_cats_12.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B81039652366AC6D007155D4 /* 02_cats_12.mp3 */; };
 		B8177AB42362E43600071110 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8177AB32362E43600071110 /* AppDelegate.swift */; };
 		B8177AB62362E43600071110 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8177AB52362E43600071110 /* SceneDelegate.swift */; };
 		B8177AB82362E43600071110 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8177AB72362E43600071110 /* ViewController.swift */; };
@@ -32,20 +24,12 @@
 
 /* Begin PBXFileReference section */
 		B81039562366A98C007155D4 /* fluffy-Gothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fluffy-Gothic.ttf"; sourceTree = "<group>"; };
-		B81039582366AC6D007155D4 /* 02_cats_14.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 02_cats_14.mp3; path = Footage/se/02_cats_14.mp3; sourceTree = SOURCE_ROOT; };
-		B81039592366AC6D007155D4 /* 02_cats_07.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 02_cats_07.mp3; path = Footage/se/02_cats_07.mp3; sourceTree = SOURCE_ROOT; };
 		B810395A2366AC6D007155D4 /* 02_cats_03.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 02_cats_03.mp3; path = Footage/se/02_cats_03.mp3; sourceTree = SOURCE_ROOT; };
-		B810395B2366AC6D007155D4 /* 02_cats_11.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 02_cats_11.mp3; path = Footage/se/02_cats_11.mp3; sourceTree = SOURCE_ROOT; };
 		B810395C2366AC6D007155D4 /* 02_cats_01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 02_cats_01.mp3; path = Footage/se/02_cats_01.mp3; sourceTree = SOURCE_ROOT; };
-		B810395D2366AC6D007155D4 /* 02_cats_13.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 02_cats_13.mp3; path = Footage/se/02_cats_13.mp3; sourceTree = SOURCE_ROOT; };
-		B810395E2366AC6D007155D4 /* 02_cats_08.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 02_cats_08.mp3; path = Footage/se/02_cats_08.mp3; sourceTree = SOURCE_ROOT; };
-		B810395F2366AC6D007155D4 /* 02_cats_09.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 02_cats_09.mp3; path = Footage/se/02_cats_09.mp3; sourceTree = SOURCE_ROOT; };
 		B81039602366AC6D007155D4 /* 02_cats_04.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 02_cats_04.mp3; path = Footage/se/02_cats_04.mp3; sourceTree = SOURCE_ROOT; };
 		B81039612366AC6D007155D4 /* 02_cats_02.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 02_cats_02.mp3; path = Footage/se/02_cats_02.mp3; sourceTree = SOURCE_ROOT; };
-		B81039622366AC6D007155D4 /* 02_cats_10.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 02_cats_10.mp3; path = Footage/se/02_cats_10.mp3; sourceTree = SOURCE_ROOT; };
 		B81039632366AC6D007155D4 /* 02_cats_05.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 02_cats_05.mp3; path = Footage/se/02_cats_05.mp3; sourceTree = SOURCE_ROOT; };
 		B81039642366AC6D007155D4 /* 02_cats_06.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 02_cats_06.mp3; path = Footage/se/02_cats_06.mp3; sourceTree = SOURCE_ROOT; };
-		B81039652366AC6D007155D4 /* 02_cats_12.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 02_cats_12.mp3; path = Footage/se/02_cats_12.mp3; sourceTree = SOURCE_ROOT; };
 		B8177AB02362E43600071110 /* Cats_meaw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cats_meaw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8177AB32362E43600071110 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8177AB52362E43600071110 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,14 +84,6 @@
 				B81039602366AC6D007155D4 /* 02_cats_04.mp3 */,
 				B81039632366AC6D007155D4 /* 02_cats_05.mp3 */,
 				B81039642366AC6D007155D4 /* 02_cats_06.mp3 */,
-				B81039592366AC6D007155D4 /* 02_cats_07.mp3 */,
-				B810395E2366AC6D007155D4 /* 02_cats_08.mp3 */,
-				B810395F2366AC6D007155D4 /* 02_cats_09.mp3 */,
-				B81039622366AC6D007155D4 /* 02_cats_10.mp3 */,
-				B810395B2366AC6D007155D4 /* 02_cats_11.mp3 */,
-				B81039652366AC6D007155D4 /* 02_cats_12.mp3 */,
-				B810395D2366AC6D007155D4 /* 02_cats_13.mp3 */,
-				B81039582366AC6D007155D4 /* 02_cats_14.mp3 */,
 			);
 			path = Cats_meaw;
 			sourceTree = "<group>";
@@ -173,19 +149,11 @@
 				B81039572366A98C007155D4 /* fluffy-Gothic.ttf in Resources */,
 				B810396F2366AC6D007155D4 /* 02_cats_02.mp3 in Resources */,
 				B810396E2366AC6D007155D4 /* 02_cats_04.mp3 in Resources */,
-				B81039692366AC6D007155D4 /* 02_cats_11.mp3 in Resources */,
 				B8177AC02362E43700071110 /* LaunchScreen.storyboard in Resources */,
-				B810396C2366AC6D007155D4 /* 02_cats_08.mp3 in Resources */,
-				B81039662366AC6D007155D4 /* 02_cats_14.mp3 in Resources */,
 				B8177ABD2362E43700071110 /* Assets.xcassets in Resources */,
 				B81039682366AC6D007155D4 /* 02_cats_03.mp3 in Resources */,
-				B81039672366AC6D007155D4 /* 02_cats_07.mp3 in Resources */,
-				B81039732366AC6D007155D4 /* 02_cats_12.mp3 in Resources */,
 				B81039722366AC6D007155D4 /* 02_cats_06.mp3 in Resources */,
-				B810396D2366AC6D007155D4 /* 02_cats_09.mp3 in Resources */,
-				B810396B2366AC6D007155D4 /* 02_cats_13.mp3 in Resources */,
 				B81039712366AC6D007155D4 /* 02_cats_05.mp3 in Resources */,
-				B81039702366AC6D007155D4 /* 02_cats_10.mp3 in Resources */,
 				B810396A2366AC6D007155D4 /* 02_cats_01.mp3 in Resources */,
 				B8177ABB2362E43600071110 /* Main.storyboard in Resources */,
 			);
@@ -345,13 +313,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.3;
 				DEVELOPMENT_TEAM = GS9PGYLT5P;
 				INFOPLIST_FILE = Cats_meaw/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.seiu.Cats-meaw";
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.nekoseiu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -363,13 +333,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.3;
 				DEVELOPMENT_TEAM = GS9PGYLT5P;
 				INFOPLIST_FILE = Cats_meaw/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.seiu.Cats-meaw";
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.nekoseiu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
