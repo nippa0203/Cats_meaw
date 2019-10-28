@@ -1,24 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="fluffy-Gothic.ttf">
+            <string>fluffy-Gothic</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cats_meaw" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="lFA-Fq-n0k">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ねこホイホイ♪" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3y-yx-xKU">
+                                <rect key="frame" x="44" y="74" width="326" height="47"/>
+                                <fontDescription key="fontDescription" name="fluffy-Gothic" family="fluffy-Gothic" pointSize="46"/>
+                                <color key="textColor" red="0.3333333432674408" green="0.25490196078431371" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNd-tB-e3b">
+                                <rect key="frame" x="0.0" y="241" width="414" height="414"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" image="cat_face_edit"/>
+                                <connections>
+                                    <action selector="catsFace:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KeO-My-kk5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ねこをタップしてね！" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJX-oq-zjz">
+                                <rect key="frame" x="60" y="801" width="294" height="31"/>
+                                <fontDescription key="fontDescription" name="fluffy-Gothic" family="fluffy-Gothic" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.56081442636986301" blue="0.24379280821917809" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lFA-Fq-n0k" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7gV-Ej-Myh"/>
+                            <constraint firstItem="zJX-oq-zjz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="POs-Qt-d7H"/>
+                            <constraint firstItem="lFA-Fq-n0k" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ql4-KV-UGp"/>
+                            <constraint firstItem="sNd-tB-e3b" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RGu-77-4y3"/>
+                            <constraint firstItem="y3y-yx-xKU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="VGh-dZ-QpQ"/>
+                            <constraint firstItem="lFA-Fq-n0k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YQF-QI-mAv"/>
+                            <constraint firstItem="sNd-tB-e3b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YwF-0R-PDW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zJX-oq-zjz" secondAttribute="bottom" constant="30" id="gav-5Y-7er"/>
+                            <constraint firstAttribute="bottom" secondItem="lFA-Fq-n0k" secondAttribute="bottom" id="rry-oD-hvu"/>
+                            <constraint firstItem="y3y-yx-xKU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tc0-1M-Nls"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="135.9375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg" width="1200" height="1652"/>
+        <image name="cat_face_edit" width="472" height="472"/>
+    </resources>
 </document>
