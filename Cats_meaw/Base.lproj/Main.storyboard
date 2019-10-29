@@ -40,33 +40,33 @@
                                     <action selector="catsFace:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KeO-My-kk5"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ねこをタップしてね！" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJX-oq-zjz">
-                                <rect key="frame" x="60" y="747" width="294" height="31"/>
-                                <fontDescription key="fontDescription" name="fluffy-Gothic" family="fluffy-Gothic" pointSize="30"/>
-                                <color key="textColor" red="1" green="0.56081442636986301" blue="0.24379280821917809" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                <size key="shadowOffset" width="1" height="1"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eq3-iW-W4h">
-                                <rect key="frame" x="136" y="585" width="142" height="142"/>
+                                <rect key="frame" x="136" y="586" width="142" height="142"/>
                                 <state key="normal" image="cats_baby_small"/>
                                 <connections>
                                     <segue destination="YEe-DN-LNG" kind="show" id="HAf-kj-tkk"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ねこをタップしてね！" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJX-oq-zjz">
+                                <rect key="frame" x="89.5" y="97" width="235.5" height="25"/>
+                                <fontDescription key="fontDescription" name="fluffy-Gothic" family="fluffy-Gothic" pointSize="24"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="lFA-Fq-n0k" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7gV-Ej-Myh"/>
+                            <constraint firstItem="zJX-oq-zjz" firstAttribute="top" secondItem="y3y-yx-xKU" secondAttribute="bottom" constant="20" id="Lbm-pb-Nc8"/>
                             <constraint firstItem="zJX-oq-zjz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="POs-Qt-d7H"/>
                             <constraint firstItem="lFA-Fq-n0k" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ql4-KV-UGp"/>
                             <constraint firstItem="sNd-tB-e3b" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RGu-77-4y3"/>
                             <constraint firstItem="y3y-yx-xKU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="VGh-dZ-QpQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Eq3-iW-W4h" secondAttribute="bottom" constant="80" id="YAh-Km-VDh"/>
                             <constraint firstItem="lFA-Fq-n0k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YQF-QI-mAv"/>
                             <constraint firstItem="sNd-tB-e3b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YwF-0R-PDW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zJX-oq-zjz" secondAttribute="bottom" constant="30" id="gav-5Y-7er"/>
-                            <constraint firstItem="zJX-oq-zjz" firstAttribute="top" secondItem="Eq3-iW-W4h" secondAttribute="bottom" constant="20" id="h85-oA-JeV"/>
                             <constraint firstAttribute="bottom" secondItem="lFA-Fq-n0k" secondAttribute="bottom" id="rry-oD-hvu"/>
                             <constraint firstItem="y3y-yx-xKU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tc0-1M-Nls"/>
                             <constraint firstItem="Eq3-iW-W4h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z0k-3M-Lq6"/>
@@ -99,26 +99,26 @@
                                 <color key="shadowColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ねこをタップしてね！" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOG-ey-hSq">
-                                <rect key="frame" x="60" y="747" width="294" height="31"/>
-                                <fontDescription key="fontDescription" name="fluffy-Gothic" family="fluffy-Gothic" pointSize="30"/>
-                                <color key="textColor" red="1" green="0.56081442640000001" blue="0.24379280819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                <size key="shadowOffset" width="1" height="1"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Okf-07-mV7">
                                 <rect key="frame" x="0.0" y="241" width="414" height="414"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" image="cats_baby"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8H-kK-nOY">
-                                <rect key="frame" x="136" y="585" width="142" height="142"/>
+                                <rect key="frame" x="136" y="586" width="142" height="142"/>
                                 <state key="normal" image="cat_face_edit_small"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="14P-kh-kN7"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ねこをタップしてね！" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOG-ey-hSq">
+                                <rect key="frame" x="89.5" y="97" width="235.5" height="25"/>
+                                <fontDescription key="fontDescription" name="fluffy-Gothic" family="fluffy-Gothic" pointSize="24"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -128,8 +128,8 @@
                             <constraint firstItem="i8H-kK-nOY" firstAttribute="centerX" secondItem="NAT-lw-hhp" secondAttribute="centerX" id="GPP-zb-CuW"/>
                             <constraint firstItem="mGQ-ki-0Mu" firstAttribute="top" secondItem="ETi-VL-36y" secondAttribute="top" constant="30" id="MdG-b8-KsO"/>
                             <constraint firstItem="Okf-07-mV7" firstAttribute="centerY" secondItem="NAT-lw-hhp" secondAttribute="centerY" id="UOH-jg-nLO"/>
-                            <constraint firstItem="ETi-VL-36y" firstAttribute="bottom" secondItem="aOG-ey-hSq" secondAttribute="bottom" constant="30" id="UmM-jA-OaX"/>
-                            <constraint firstItem="aOG-ey-hSq" firstAttribute="top" secondItem="i8H-kK-nOY" secondAttribute="bottom" constant="20" id="i4e-dL-gG6"/>
+                            <constraint firstItem="ETi-VL-36y" firstAttribute="bottom" secondItem="i8H-kK-nOY" secondAttribute="bottom" constant="80" id="Wa2-3U-Ieu"/>
+                            <constraint firstItem="aOG-ey-hSq" firstAttribute="top" secondItem="mGQ-ki-0Mu" secondAttribute="bottom" constant="20" id="ukg-Ld-jxO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ETi-VL-36y"/>
                     </view>
