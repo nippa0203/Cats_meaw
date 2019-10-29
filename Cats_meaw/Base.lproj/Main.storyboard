@@ -15,16 +15,16 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cats_meaw" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Cats01" id="BYZ-38-t0r" customClass="ViewController" customModule="Cats_meaw" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="lFA-Fq-n0k">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ねこホイホイ♪" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3y-yx-xKU">
-                                <rect key="frame" x="44" y="74" width="326" height="47"/>
+                                <rect key="frame" x="44" y="30" width="326" height="47"/>
                                 <fontDescription key="fontDescription" name="fluffy-Gothic" family="fluffy-Gothic" pointSize="46"/>
                                 <color key="textColor" red="0.3333333432674408" green="0.25490196078431371" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -41,13 +41,20 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ねこをタップしてね！" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJX-oq-zjz">
-                                <rect key="frame" x="60" y="801" width="294" height="31"/>
+                                <rect key="frame" x="60" y="747" width="294" height="31"/>
                                 <fontDescription key="fontDescription" name="fluffy-Gothic" family="fluffy-Gothic" pointSize="30"/>
                                 <color key="textColor" red="1" green="0.56081442636986301" blue="0.24379280821917809" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eq3-iW-W4h">
+                                <rect key="frame" x="136" y="585" width="142" height="142"/>
+                                <state key="normal" image="cats_baby_small"/>
+                                <connections>
+                                    <segue destination="YEe-DN-LNG" kind="show" id="HAf-kj-tkk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -59,19 +66,85 @@
                             <constraint firstItem="lFA-Fq-n0k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YQF-QI-mAv"/>
                             <constraint firstItem="sNd-tB-e3b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YwF-0R-PDW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zJX-oq-zjz" secondAttribute="bottom" constant="30" id="gav-5Y-7er"/>
+                            <constraint firstItem="zJX-oq-zjz" firstAttribute="top" secondItem="Eq3-iW-W4h" secondAttribute="bottom" constant="20" id="h85-oA-JeV"/>
                             <constraint firstAttribute="bottom" secondItem="lFA-Fq-n0k" secondAttribute="bottom" id="rry-oD-hvu"/>
                             <constraint firstItem="y3y-yx-xKU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tc0-1M-Nls"/>
+                            <constraint firstItem="Eq3-iW-W4h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z0k-3M-Lq6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="iF0-xg-sHH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="135.9375"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="n4k-Hl-Kgo">
+            <objects>
+                <viewController storyboardIdentifier="Cats02" id="YEe-DN-LNG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NAT-lw-hhp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="eTj-aw-R11">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ねこホイホイ♪" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGQ-ki-0Mu">
+                                <rect key="frame" x="44" y="30" width="326" height="47"/>
+                                <fontDescription key="fontDescription" name="fluffy-Gothic" family="fluffy-Gothic" pointSize="46"/>
+                                <color key="textColor" red="0.33333334329999997" green="0.25490196079999999" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ねこをタップしてね！" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOG-ey-hSq">
+                                <rect key="frame" x="60" y="747" width="294" height="31"/>
+                                <fontDescription key="fontDescription" name="fluffy-Gothic" family="fluffy-Gothic" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.56081442640000001" blue="0.24379280819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Okf-07-mV7">
+                                <rect key="frame" x="0.0" y="241" width="414" height="414"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" image="cats_baby"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8H-kK-nOY">
+                                <rect key="frame" x="136" y="585" width="142" height="142"/>
+                                <state key="normal" image="cat_face_edit_small"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="14P-kh-kN7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="mGQ-ki-0Mu" firstAttribute="centerX" secondItem="NAT-lw-hhp" secondAttribute="centerX" id="1F6-DP-A6u"/>
+                            <constraint firstItem="Okf-07-mV7" firstAttribute="centerX" secondItem="NAT-lw-hhp" secondAttribute="centerX" id="34e-Z1-hXR"/>
+                            <constraint firstItem="aOG-ey-hSq" firstAttribute="centerX" secondItem="NAT-lw-hhp" secondAttribute="centerX" id="4FZ-hi-hop"/>
+                            <constraint firstItem="i8H-kK-nOY" firstAttribute="centerX" secondItem="NAT-lw-hhp" secondAttribute="centerX" id="GPP-zb-CuW"/>
+                            <constraint firstItem="mGQ-ki-0Mu" firstAttribute="top" secondItem="ETi-VL-36y" secondAttribute="top" constant="30" id="MdG-b8-KsO"/>
+                            <constraint firstItem="Okf-07-mV7" firstAttribute="centerY" secondItem="NAT-lw-hhp" secondAttribute="centerY" id="UOH-jg-nLO"/>
+                            <constraint firstItem="ETi-VL-36y" firstAttribute="bottom" secondItem="aOG-ey-hSq" secondAttribute="bottom" constant="30" id="UmM-jA-OaX"/>
+                            <constraint firstItem="aOG-ey-hSq" firstAttribute="top" secondItem="i8H-kK-nOY" secondAttribute="bottom" constant="20" id="i4e-dL-gG6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ETi-VL-36y"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="FBw-YL-SPw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xtC-Hi-UkQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="894.20289855072474" y="137.94642857142856"/>
+        </scene>
     </scenes>
     <resources>
         <image name="bg" width="1200" height="1652"/>
         <image name="cat_face_edit" width="472" height="472"/>
+        <image name="cat_face_edit_small" width="142" height="142"/>
+        <image name="cats_baby" width="472" height="472"/>
+        <image name="cats_baby_small" width="142" height="142"/>
     </resources>
 </document>
