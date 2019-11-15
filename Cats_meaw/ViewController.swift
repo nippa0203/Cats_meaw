@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 import GoogleMobileAds
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, AVAudioPlayerDelegate {
     
     // AdMob
     var bannerView: GADBannerView!
@@ -24,6 +24,7 @@ class ViewController: UIViewController {
         bannerView.adUnitID = "ca-app-pub-8285428500615343/1707576995"
          bannerView.rootViewController = self
         bannerView.load(GADRequest())
+
     }
 
     
@@ -45,6 +46,9 @@ class ViewController: UIViewController {
     var nekoPlayer:AVAudioPlayer!
     var catsNumber = 0
     
+    @IBOutlet weak var catButton: UIButton!
+
+    
     @IBAction func catsFace(_ sender: Any) {
         do {
             var newCatsNumber = 0
@@ -63,19 +67,25 @@ class ViewController: UIViewController {
                 // 新しい猫の声の結果を格納
                 catsNumber = newCatsNumber
                 
-                if catsNumber == 0{
-                    nekoPlayer = try AVAudioPlayer(contentsOf: nekoPath01, fileTypeHint: nil)
-                    } else if catsNumber == 1 {
-                    nekoPlayer = try AVAudioPlayer(contentsOf: nekoPath02, fileTypeHint: nil)
-                    } else if catsNumber == 2 {
-                        nekoPlayer = try AVAudioPlayer(contentsOf: nekoPath03, fileTypeHint: nil)
-                    } else if catsNumber == 3 {
-                        nekoPlayer = try AVAudioPlayer(contentsOf: nekoPath04, fileTypeHint: nil)
-                    } else if catsNumber == 4 {
-                        nekoPlayer = try AVAudioPlayer(contentsOf: nekoPath05, fileTypeHint: nil)
-                    } else if catsNumber == 5 {
-                        nekoPlayer = try AVAudioPlayer(contentsOf: nekoPath06, fileTypeHint: nil)
-                    }
+            
+            switch catsNumber {
+            case 0:
+                nekoPlayer = try AVAudioPlayer(contentsOf: nekoPath01, fileTypeHint: nil)
+//                catButton.setImage(UIImage.init(named: "cats_baby_small"), for: .normal)
+
+            case 1:
+                nekoPlayer = try AVAudioPlayer(contentsOf: nekoPath02, fileTypeHint: nil)
+            case 2:
+                nekoPlayer = try AVAudioPlayer(contentsOf: nekoPath03, fileTypeHint: nil)
+            case 3:
+                nekoPlayer = try AVAudioPlayer(contentsOf: nekoPath04, fileTypeHint: nil)
+            case 4:
+                nekoPlayer = try AVAudioPlayer(contentsOf: nekoPath05, fileTypeHint: nil)
+            default:
+                nekoPlayer = try AVAudioPlayer(contentsOf: nekoPath06, fileTypeHint: nil)
+            }
+            nekoPlayer.delegate = self
+            
                 // 猫の音源再生
                 nekoPlayer.play()
             } catch {
@@ -84,6 +94,11 @@ class ViewController: UIViewController {
             }
             
         }
+    
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        guard flag else { return }
+        print("finished")
+    }
         
     func addBannerViewToView(_ bannerView: GADBannerView) {
      bannerView.translatesAutoresizingMaskIntoConstraints = false

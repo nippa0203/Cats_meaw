@@ -21,6 +21,7 @@
 		B8177ABB2362E43600071110 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8177AB92362E43600071110 /* Main.storyboard */; };
 		B8177ABD2362E43700071110 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8177ABC2362E43700071110 /* Assets.xcassets */; };
 		B8177AC02362E43700071110 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8177ABE2362E43700071110 /* LaunchScreen.storyboard */; };
+		B8680FC5236D42980089C193 /* SecomdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8680FC4236D42980089C193 /* SecomdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		B8177ABC2362E43700071110 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8177ABF2362E43700071110 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8177AC12362E43700071110 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8680FC4236D42980089C193 /* SecomdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecomdViewController.swift; sourceTree = "<group>"; };
 		D2C56C141249319CC50E05FD /* Pods_Cats_meaw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cats_meaw.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6145E9921AB27A2A383591F /* Pods-Cats_meaw.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cats_meaw.release.xcconfig"; path = "Target Support Files/Pods-Cats_meaw/Pods-Cats_meaw.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,6 +99,7 @@
 				B8177AB32362E43600071110 /* AppDelegate.swift */,
 				B8177AB52362E43600071110 /* SceneDelegate.swift */,
 				B8177AB72362E43600071110 /* ViewController.swift */,
+				B8680FC4236D42980089C193 /* SecomdViewController.swift */,
 				B8177AB92362E43600071110 /* Main.storyboard */,
 				B8177ABC2362E43700071110 /* Assets.xcassets */,
 				B8177ABE2362E43700071110 /* LaunchScreen.storyboard */,
@@ -237,6 +240,7 @@
 				B8177AB82362E43600071110 /* ViewController.swift in Sources */,
 				B8177AB42362E43600071110 /* AppDelegate.swift in Sources */,
 				B8177AB62362E43600071110 /* SceneDelegate.swift in Sources */,
+				B8680FC5236D42980089C193 /* SecomdViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
