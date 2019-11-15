@@ -59,6 +59,9 @@
                                     <constraint firstAttribute="width" constant="200" id="ure-dB-uKr"/>
                                 </constraints>
                                 <state key="normal" title="Cat Baby" image="cats_baby"/>
+                                <connections>
+                                    <action selector="catBabyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KKs-2J-6Dd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kmh-GF-1S6">
                                 <rect key="frame" x="207" y="448" width="200" height="200"/>

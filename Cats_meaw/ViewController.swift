@@ -42,12 +42,45 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     let nekoPath06 =
         Bundle.main.bundleURL.appendingPathComponent("02_cats_06.mp3")
     
+    // 赤ちゃんねこの音源ファイルを指定
+    let babyNekoPath01 =
+        Bundle.main.bundleURL.appendingPathComponent("Cat_Baby01.mp3")
+    let babyNekoPath02 =
+        Bundle.main.bundleURL.appendingPathComponent("Cat_Baby02.mp3")
+    let babyNekoPath03 =
+        Bundle.main.bundleURL.appendingPathComponent("Cat_Baby03.mp3")
+    let babyNekoPath04 =
+        Bundle.main.bundleURL.appendingPathComponent("Cat_Baby04.mp3")
+    let babyNekoPath05 =
+        Bundle.main.bundleURL.appendingPathComponent("Cat_Baby05.mp3")
+    let babyNekoPath06 =
+        Bundle.main.bundleURL.appendingPathComponent("Cat_Baby06.mp3")
+    let babyNekoPath07 =
+        Bundle.main.bundleURL.appendingPathComponent("Cat_Baby07.mp3")
+    let babyNekoPath08 =
+        Bundle.main.bundleURL.appendingPathComponent("Cat_Baby08.mp3")
+    let babyNekoPath09 =
+        Bundle.main.bundleURL.appendingPathComponent("Cat_Baby09.mp3")
+    let babyNekoPath10 =
+        Bundle.main.bundleURL.appendingPathComponent("Cat_Baby10.mp3")
+    let babyNekoPath11 =
+        Bundle.main.bundleURL.appendingPathComponent("Cat_Baby11.mp3")
+    let babyNekoPath12 =
+        Bundle.main.bundleURL.appendingPathComponent("Cat_Baby12.mp3")
+    let babyNekoPath13 =
+        Bundle.main.bundleURL.appendingPathComponent("Cat_Baby13.mp3")
+    let babyNekoPath14 =
+        Bundle.main.bundleURL.appendingPathComponent("Cat_Baby14.mp3")
+    let babyNekoPath15 =
+        Bundle.main.bundleURL.appendingPathComponent("Cat_Baby15.mp3")
+    
+    
+    
     // ねこのプレイヤーインスタンスを作成
     var nekoPlayer:AVAudioPlayer!
     var catsNumber = 0
     
     @IBOutlet weak var catButton: UIButton!
-
     
     @IBAction func catsFace(_ sender: Any) {
         do {
@@ -94,6 +127,62 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             }
             
         }
+    
+    @IBAction func catBabyButton(_ sender: Any) {
+        do {
+            var newCatsNumber = 0
+            
+            
+            repeat {
+                newCatsNumber = Int(arc4random_uniform(15))
+            
+            // 前回と同じ結果ときは再度ランダムに数値を出す
+            // 異なる結果のときは、repeatを抜ける
+        } while catsNumber == newCatsNumber
+            
+            // 新しい猫の声の結果を格納
+            catsNumber = newCatsNumber
+        
+        switch catsNumber {
+        case 0:
+                nekoPlayer = try AVAudioPlayer(contentsOf: babyNekoPath01, fileTypeHint: nil)
+        case 1:
+                nekoPlayer = try AVAudioPlayer(contentsOf: babyNekoPath02, fileTypeHint: nil)
+            case 2:
+                    nekoPlayer = try AVAudioPlayer(contentsOf: babyNekoPath03, fileTypeHint: nil)
+            case 3:
+                    nekoPlayer = try AVAudioPlayer(contentsOf: babyNekoPath04, fileTypeHint: nil)
+            case 4:
+                    nekoPlayer = try AVAudioPlayer(contentsOf: babyNekoPath05, fileTypeHint: nil)
+            case 5:
+                    nekoPlayer = try AVAudioPlayer(contentsOf: babyNekoPath06, fileTypeHint: nil)
+            case 6:
+                    nekoPlayer = try AVAudioPlayer(contentsOf: babyNekoPath07, fileTypeHint: nil)
+            case 7:
+                    nekoPlayer = try AVAudioPlayer(contentsOf: babyNekoPath08, fileTypeHint: nil)
+            case 8:
+                    nekoPlayer = try AVAudioPlayer(contentsOf: babyNekoPath09, fileTypeHint: nil)
+            case 9:
+                    nekoPlayer = try AVAudioPlayer(contentsOf: babyNekoPath10, fileTypeHint: nil)
+            case 10:
+                    nekoPlayer = try AVAudioPlayer(contentsOf: babyNekoPath11, fileTypeHint: nil)
+            case 11:
+                    nekoPlayer = try AVAudioPlayer(contentsOf: babyNekoPath12, fileTypeHint: nil)
+            case 12:
+                    nekoPlayer = try AVAudioPlayer(contentsOf: babyNekoPath13, fileTypeHint: nil)
+            case 13:
+                    nekoPlayer = try AVAudioPlayer(contentsOf: babyNekoPath14, fileTypeHint: nil)
+        default:
+                nekoPlayer = try AVAudioPlayer(contentsOf: babyNekoPath15, fileTypeHint: nil)
+        }
+        nekoPlayer.play()
+    } catch {
+        print("赤ちゃん猫の声再生でエラーが発生しました。")
+        }
+        
+        
+    }
+    
     
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
         guard flag else { return }

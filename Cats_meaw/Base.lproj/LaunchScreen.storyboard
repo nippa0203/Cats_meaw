@@ -6,6 +6,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="fluffy-Gothic.ttf">
+            <string>fluffy-Gothic</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -15,16 +20,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="2MD-WS-5aZ">
-                                <rect key="frame" x="-26" y="-12" width="465" height="920"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="2MD-WS-5aZ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLC-sb-E77">
+                                <rect key="frame" x="57" y="248" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="P32-c2-xpK"/>
+                                    <constraint firstAttribute="height" constant="300" id="UbA-wb-XM5"/>
+                                </constraints>
+                                <state key="normal" image="cat_face_edit"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ねこホイホイ♪" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ddr-It-D1Z">
+                                <rect key="frame" x="90" y="521.5" width="234" height="33"/>
+                                <fontDescription key="fontDescription" name="fluffy-Gothic" family="fluffy-Gothic" pointSize="33"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2MD-WS-5aZ" secondAttribute="trailing" id="96K-1K-T7Y"/>
-                            <constraint firstItem="2MD-WS-5aZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KEA-TX-0uZ"/>
-                            <constraint firstItem="2MD-WS-5aZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="THh-nm-DE8"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2MD-WS-5aZ" secondAttribute="bottom" id="XXM-qE-hSa"/>
+                            <constraint firstAttribute="trailing" secondItem="2MD-WS-5aZ" secondAttribute="trailing" id="F42-7P-pY6"/>
+                            <constraint firstItem="2MD-WS-5aZ" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="HJ2-zX-sf2"/>
+                            <constraint firstItem="Ddr-It-D1Z" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Icz-fX-8FJ"/>
+                            <constraint firstItem="eLC-sb-E77" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-50" id="Mmb-GF-dx0"/>
+                            <constraint firstItem="Ddr-It-D1Z" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="90" id="XJx-Re-st1"/>
+                            <constraint firstAttribute="bottom" secondItem="2MD-WS-5aZ" secondAttribute="bottom" id="nVR-Bl-pYC"/>
+                            <constraint firstItem="2MD-WS-5aZ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="oDw-If-VoI"/>
+                            <constraint firstItem="eLC-sb-E77" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="rNW-RF-daZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -36,5 +59,6 @@
     </scenes>
     <resources>
         <image name="bg" width="1200" height="1652"/>
+        <image name="cat_face_edit" width="472" height="472"/>
     </resources>
 </document>
