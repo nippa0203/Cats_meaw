@@ -11,3 +11,7 @@ https://apps.apple.com/jp/app/%E3%81%AD%E3%81%93%E3%83%9B%E3%82%A4%E3%83%9B%E3%8
 
 プログラマー職になる前に、独学でSwiftを勉強してリリースしたものです。
 大変お恥ずかしいです...。
+
+[アプリ画面]
+
+![IMG_2685](https://user-images.githubusercontent.com/12791618/159959604-9a3228be-9a29-40f4-a522-2d299d9befd3.PNG)
